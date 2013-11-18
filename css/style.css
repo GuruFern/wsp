@@ -4,16 +4,128 @@ Copyright 2013, Josh Cope
 */
 
 /* =============================================================================
+   Color Guide
+   ========================================================================== 
+   
+   Fuscia: #ff0945
+   Yellow: #ffc519
+
+*/
+   
+/* =============================================================================
    Site Styles
    ========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Rationale);
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: url(../images/asfalt.png) repeat;
+	font-family: 'Rationale', sans-serif;
+	font-size: 1em;
+	color: #fff;
+}
+
+h1 {
+	color: #ff0945;
+	font-size: 2.5em;
+}
+
+h2 {
+	color: #ffc519;
+	font-size: 2em;
+}
+
 header {
 	margin-top: 10px;
+}
+
+header a {
+	text-decoration: none;
+}
+
+nav {
+	margin-top: 75px;
 }
 
 nav li {
 	display: inline;
 }
 
+nav a {
+	text-decoration: none;
+	font-size: 2em;
+	color: white;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+article {
+	margin-top: 40px;
+}
+
+article p {
+	font-size: 1.5em;
+}
+
+article a {
+	text-decoration: none;
+	color: #ffc519;
+}
+
+aside img {
+	margin-top: 50px;
+}
+
+footer {
+	font-size: 1.25em;
+	color: #ffc519;
+}
+
+footer a {
+	text-decoration: none;
+	color: #ffc519;
+	display: inline-block;
+	
+}
+
+table td {
+	padding: 1em;
+}
+
+#active a {
+	color: #e82012;
+}
+
+.buttonSubmit {
+	font-size: 1.3em;
+	height: 50px;
+	background: #ffc519;
+	color:  #ff0945;
+	border-radius: 10px;
+	border: none;
+	margin-top: 20px;
+}
+
+.center {
+	text-align: center;
+}
+
+.space {
+	margin: 0px 20px 0px 20px;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.floatRight {
+	float: right;
+}
 
 
 /* =============================================================================
@@ -25,16 +137,118 @@ nav li {
    ========================================================================== */
 
 /* Tablet Portrait size to Base 996px */
-@media only screen and (min-width: 768px) and (max-width: 995px) {}
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+	h1 {
+		font-size: 1.8em;
+	}
+	
+	h2 {
+		font-size: 1.5em;
+	}
+	
+	nav a {
+		font-size: 1.4em;
+	}
+	
+	article { 
+		margin-top: 30px;
+	}
+	
+	article p {
+		font-size: 1.2em;
+	}
+	
+	footer {
+		font-size: 1em;
+	}
+}
 
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {}
 
 /* Mobile Landscape Size to Tablet Portrait */
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	h1 {
+		font-size: 1.5em;
+	}
+	
+	h2 {
+		font-size: 1.3em;
+	}
+	
+	header {
+		text-align: center;
+	}
+	
+	nav {
+		margin-top: 20px;
+	}
+		
+	nav a {
+		font-size: 1em;
+	}
+	
+	article { 
+		margin-top: 20px;
+	}
+	
+	article p {
+		font-size: 1em;
+	}
+	
+	footer {
+		font-size: .8em;
+	}
+}
 
 /* Mobile Portrait Size to Mobile Landscape Size */
-@media only screen and (max-width: 479px) {}
+@media only screen and (max-width: 479px) {
+		nav {
+			margin-top: 10px;
+		}
+		
+		nav ul {
+			width: 100%;
+			padding: 0px;
+		}
+		
+		nav li{
+			margin-bottom: 20px;
+			background: #ffc519;
+			width: 100%;
+			display: block;
+			text-align: center;
+			border: 1px solid #000;
+			
+		}
+		
+		nav a {
+			margin: 0px;
+			color: #ff0945;
+			display: block;
+			width: 100%;
+		}
+		
+		article { 
+			width: 100%;
+			font-size: .75em;
+			margin-top: 10px;
+		}
+		
+		article h1 {
+			text-align: center;
+		}
+		
+		footer {
+			display: none;
+		}
+		
+		.mobileNoDisplay {
+			display: none;
+		}
+		
+	
+	}
 
 
 /* =============================================================================
