@@ -27,16 +27,25 @@
 	<div class="container">
     
 	<header class="grid_4">
-    	<img src="images/APS-Logo.png" alt="APS Logo">
+    	<a href="index.html"><img src="images/APS-Logo-vW.png" alt="APS Logo"></a>
     </header>
     
     <nav class="grid_8">
+<<<<<<< HEAD
     	<ul>
         	<li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="reviews.html">Product Reviews</a></li>
             <li><a href="contact.html">Contact Us</a></li>
+=======
+    	<ul class="mobileNoDisplay">
+        	<li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li id="active"><a href="contact.html">Contact Us</a></li>
+>>>>>>> master
         </ul>
     </nav>
     
@@ -47,27 +56,41 @@
         <h2>Drop us a line:</h2>
         
        <form method="get" action="mailto:jam@a-philes.com">
-				
-				<div>
+			
+            <table>	
+				<tr>
+                <td>
 					<label for="name" class="alternate">Name:</label>
+                </td>
+                <td>
 					<input type="text" name="name" id="name" />
-				</div>
-				
-				<div>
+				</td>
+				</tr>
+                
+                <tr>
+				<td>
 					<label for="email" class="alternate">E-Mail:</label>
-					<input type="text" name="email" id="email" />
-				</div>
-				
-				<div>
+				</td>
+                <td>	
+                    <input type="text" name="email" id="email" />
+				</td>
+				</tr>
+                
+                <tr>
+				<td>
 					<label for="message" class="alternate">Message:</label>
-					<textarea rows="5" name="message" id="message"></textarea>
-				</div>
-				
-				<div>
+				</td>
+                <td>	
+                    <textarea rows="5" name="message" id="message"></textarea>
+				</td>
+				</tr>
+                
+                <tr>
+				<td>
 					<label for="regarding" class="alternate">Regarding:</label>
-				</div>
+				</td>
 				
-				<div>
+				<td>
 					<select name="regarding" id="regarding">
 						<option>General Inquiry</option>
 						<option>Fees</option>
@@ -75,15 +98,17 @@
 						<option>Legal</option>
 						<option>Other</option>
 					</select>
-				</div>
-				
+				</td>
+				</tr>
+             </table>
+              
 				<div>
-					<button type="submit" name="submit" class="button orange submit">
+					<button type="submit" name="submit" class="buttonSubmit submit">
 					Send Message
 					</button>
 				</div>
 				
-			</form>
+		</form>
         
         <h2> Our Address and Number:</h2>
         
@@ -97,11 +122,20 @@
     </aside>
     
     <footer>
+<<<<<<< HEAD
     	<p>
         	<a href="index.html">Home</a></li>|
             <a href="about.html">About Us</a></li>|
             <a href="products.html">Products</a></li>|
             <a href="reviews.html">Product Reviews</a></li>|
+=======
+    	<p class="grid_5"></p>
+    	<p class="grid_7 center">
+        	<a href="index.html">Home</a></li></li><span class="space">|</span>
+            <a href="about.html">About Us</a></li></li><span class="space">|</span>
+            <a href="products.html">Products</a></li></li><span class="space">|</span>
+            <a href="reviews.html">Product Reviews</a></li></li><span class="space">|</span>
+>>>>>>> master
             <a href="contact.html">Contact Us</a></li>
         </p>
     </footer>
