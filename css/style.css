@@ -31,13 +31,14 @@ body {
 }
 
 h1 {
-	color: #ff0945;
+	color: #e82012;
 	font-size: 2.5em;
 }
 
 h2 {
 	color: #ffc519;
 	font-size: 2em;
+	margin: 0px;
 }
 
 header {
@@ -69,7 +70,8 @@ article {
 }
 
 article p {
-	font-size: 1.5em;
+	font-size: 1.25em;
+	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 article a {
@@ -77,8 +79,22 @@ article a {
 	color: #ffc519;
 }
 
+article.products img {
+	width: 70%;
+	height: 120px;
+}
+
+aside {
+ 	text-align: center;
+}
+
 aside img {
-	margin-top: 50px;
+	width: 100%;
+	margin-bottom: 35px;
+}
+
+aside a {
+	text-decoration: none;
 }
 
 footer {
@@ -113,6 +129,10 @@ table td {
 
 .center {
 	text-align: center;
+}
+
+.georgia {
+	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .space {
